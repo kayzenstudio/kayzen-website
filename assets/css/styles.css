@@ -138,6 +138,10 @@ button:focus {
 	margin: 0;
 }
 
+.logo img {
+  max-width: 140px;
+}
+
 .menu {
 	position: absolute;
 	width: 100%;
