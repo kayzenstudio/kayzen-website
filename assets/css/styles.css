@@ -482,7 +482,7 @@ button:focus {
 		display: grid;
 		grid-template: 100% / 100%;
 		color: var(--color-text-facts);
-		pointer-events: auto;
+		pointer-events: none;
 	}
 	.facts__toggle:hover {
 		opacity: 0.6;
@@ -501,6 +501,11 @@ button:focus {
 		line-height: 1.75;
 		margin: 0 0 0 0.25rem;
 	}
+
+  .available {
+    pointer-events: auto;
+  }
+
 	.button-contentclose {
 		position: absolute;
 		top: 0;
