@@ -9,6 +9,10 @@
 	box-sizing: border-box;
 }
 
+b, strong {
+	font-weight: 600;
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -22,7 +26,7 @@ body {
 	--color-bg-facts: #000;
 	--color-text-facts: #fff;
 	--color-bg-img: #000;
-	--color-bg-more-1: #fee9b1;
+	--color-bg-more-1: #f3d7a8;
 	--color-bg-more-2: #e0f3ca;
 	--color-bg-more-3: #f3cae8;
 	--color-bg-more-4: #cacaf3;
@@ -30,6 +34,7 @@ body {
 	--color-nav-hover: #000;
 	--color-link: #000;
 	--color-link-hover: #333;
+	--color-highlight: #f3d7a8;
 }
 
 /* Page Loader */
@@ -238,11 +243,13 @@ button:focus {
 
 .section__title {
 	font-size: 10vw;
-	text-transform: lowercase;
-	margin: 0;
 	letter-spacing: -0.35vw;
-	position: relative;
+	margin: 0;
 	overflow: hidden;
+	position: relative;
+	text-transform: lowercase;
+	transform: translateX(-11px);
+	display: inline-block;
 }
 
 .section__title span {
@@ -283,6 +290,11 @@ button:focus {
 
 .section__facts-item {
 	margin: 0 0 2.5rem 0;
+}
+
+.section__facts-item.first-one {
+	position: relative;
+	color: var(--color-highlight);
 }
 
 .section__facts-img {
@@ -428,6 +440,30 @@ button:focus {
 	height: 1.25rem;
 }
 
+.highlight, .highlight-bold {
+	position: relative;
+}
+
+.highlight::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 3px;
+	left: 0;
+	bottom: -2px;
+	background: var(--color-highlight);
+}
+
+.highlight-bold::after {
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 6px;
+  left: 11px;
+  bottom: 12px;
+  background: var(--color-highlight);
+}
+
 @media screen and (min-width: 55em) and (min-height: 40em) {
 	.sections {
 		height: 100vh;
@@ -523,7 +559,7 @@ button:focus {
 		font-size: 0.75rem;
 		display: block;
 		align-self: end;
-		padding: 0 4rem 3rem 20%;
+		padding: 0 0px 3rem 4rem;
 		grid-area: sections-index;
 		display: flex;
 		z-index: 1;
