@@ -162,7 +162,7 @@
               <div class="section__more-inner section__more-inner--bg1">
                 <span class="section__more-text">Want to know more?</span>
                 <a href="#" class="section__more-link">
-                  <a href="mailto:talk@kayzen.studio" class="section__more-link">
+                  <a href="#" class="section__more-link">
                   <svg class="icon icon--arrowlong">
                     <use xlink:href="#icon-arrowlong"></use>
                   </svg>
@@ -312,7 +312,7 @@
             <div class="section__more">
               <div class="section__more-inner section__more-inner--bg4">
                 <span class="section__more-text">Need a solution?</span>
-                <a href="mailto:talk@kayzen.studio" class="section__more-link">
+                <a id="show-form" href="#" class="section__more-link">
                   <span class="section__more-linktext">Reach Us</span>
                   <svg class="icon icon--arrowlong">
                     <use xlink:href="#icon-arrowlong"></use>
@@ -341,11 +341,6 @@
                 <span class="section__facts-detail">Phone: (+89) 895896</span>
               </li>              
               <li class="section__facts-item">
-                <h3 class="section__facts-title talk-argentina">Argentina</h3>
-                <span class="section__facts-detail">Location: San Martín</span>
-                <span class="section__facts-detail">Phone: (+89) 895896</span>
-              </li>
-              <li class="section__facts-item">
                 <h3 class="section__facts-title talk-argentina">E-Mail</h3>
                 <span class="section__facts-detail">talk@kayzen.studio</span>
               </li>
@@ -358,11 +353,36 @@
         <!--/ sections -->
       </main>
       
+      <div id="form-wrapper" class="form-wrapper">
+        <div class="form-body">
+          <h1 class="header-one"> Say hi <span id="emoji-handle">👋 </span>buddy</h1>
+          <form id="contact-form" action="https://formspree.io/f/moqyeybl" method="POST">
+            <div class="input-group">
+              <input type="text" name="_customerName" placeholder="Your Name" />
+            </div>
+            <div class="input-group">
+              <input type="email" name="_replyTo" placeholder="Contact Email" />
+            </div>
+            <div class="input-group">
+              <textarea
+                name="_messageContent"
+                placeholder="How can we help you? Type here."
+              ></textarea>
+            </div>
+            <!-- your other form fields go here -->
+            <div class="input-group">
+              <button id="contact-send-btn" type="submit">Send</button>
+            </div>
+            <span id="form-status"></span>
+          </form>
+          </div>
+      </div>
+
       <script src="assets/js/jquery.min.js">             </script>
       <script src="assets/js/imagesloaded.pkgd.min.js">  </script>
       <script src="assets/js/charming.min.js">           </script>
       <script src="assets/js/anime.min.js">              </script>
       <script src="assets/js/main.js">                   </script>
-
+      <script src="assets/js/jquery.main.js">            </script>
     </body>
 </html>
