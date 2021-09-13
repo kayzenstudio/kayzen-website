@@ -346,6 +346,7 @@ button:focus {
 
 .section__facts-detail {
 	font-weight: 300;
+	max-width: 300px;
 }
 
 .section__facts-item--clickable {
@@ -667,7 +668,7 @@ button:focus {
 	}
 	.section__facts-detail {
 		display: block;
-		white-space: nowrap;
+		/* white-space: nowrap; */
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
