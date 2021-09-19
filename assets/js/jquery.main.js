@@ -1,5 +1,5 @@
 // Show and Hide Form Handles
-$("#show-form").on("click", function (e) {
+$(".show-form").on("click", function (e) {
   e.preventDefault();
   $("#form-wrapper").addClass("active");
   $(".close-overlay").removeClass("hide");
