@@ -1,26 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-  <!-- Basic Meta -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayzen Studio</title>
-  
-  <!-- Kayzen Meta -->
-  <meta name="description" content="We are a disruptive digital agency that builds and expands web applications across the multiverse.">
-  <meta name="keywords" content="kayzen, web, web applications, marketing, social media">
-  <meta name="author" content="Kayzen Studio">
+  <head>
 
-  <!-- Social Meta -->
-  <meta property="og:title" content="Kayze Studio - Digital Agency">
-  <meta property="og:description" content="We are a disruptive digital agency that builds and expands web applications across the multiverse.">
-  <meta property="og:image" content="https://kayzen.studio/assets/images/thumb.jpg">
-  <meta property="og:url" content="https://kayzen.studio">
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-<body>
-  
-</body>
+    <meta name="author" content="Kayzen" />
+    <title>Kayzen Studio</title>
+
+    <!-- Kayzen Meta -->
+    <meta name="description"
+      content="We are a disruptive digital agency that builds and expands web applications across the multiverse.">
+    <meta name="keywords" content="kayzen, web development, web applications, marketing, advertising, social media">
+    <meta name="author" content="Kayzen Studio">
+    <link rel="icon" href="assets/images/favicon.png" sizes="256x256" type="image/png"> 
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="Kayze Studio - Digital Agency">
+    <meta property="og:description"
+      content="We are a disruptive digital agency that builds and expands web applications across the multiverse.">
+    <meta property="og:image" content="https://kayzen.studio/assets/images/thumb.jpg">
+    <meta property="og:url" content="https://kayzen.studio">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/css/mCustomScrollbar.css">
+
+    <!-- Critical JS -->
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars();</script>
+
+  </head>
+    <body class="loading">
+      <svg class="hidden">
+        <symbol id="icon-menu" viewBox="0 0 24 13">
+          <title>menu</title>
+          <path
+            d="M.75 1.515h22.498a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zM23.248 5.265H8.168a.75.75 0 0 0 0 1.5h15.08a.75.75 0 0 0 0-1.5zM23.248 10.514H4.322a.75.75 0 0 0 0 1.5h18.926a.75.75 0 0 0 0-1.5z" />
+        </symbol>
+        <symbol id="icon-dot" viewBox="0 0 24 24">
+          <title>dot</title>
+          <path
+            d="M11.5 9c-.69 0-1.28.244-1.768.732A2.41 2.41 0 0 0 9 11.5c0 .69.244 1.28.732 1.767A2.409 2.409 0 0 0 11.5 14c.69 0 1.28-.244 1.768-.733A2.408 2.408 0 0 0 14 11.5c0-.69-.244-1.28-.732-1.768A2.408 2.408 0 0 0 11.5 9z" />
+        </symbol>
+        <symbol id="icon-cross" viewBox="0 0 24 24">
+          <title>cross</title>
+          <path
+            d="M11.449 11.962l-5.1 5.099a.363.363 0 1 0 .513.512L12 12.436l5.137 5.137a.361.361 0 0 0 .513 0 .363.363 0 0 0 0-.512l-5.099-5.1 5.102-5.102a.363.363 0 1 0-.512-.513L12 11.487l-5.141-5.14a.363.363 0 0 0-.513.512l5.103 5.103z" />
+        </symbol>
+        <symbol id="icon-arrowlong" viewBox="0 0 32 11">
+          <title>arrow-long</title>
+          <path
+            d="M27.166.183a.619.619 0 0 0-.878 0 .619.619 0 0 0 0 .878l2.735 2.735H.768a.624.624 0 0 0 0 1.248h28.254L26.287 7.77a.619.619 0 0 0 0 .878.617.617 0 0 0 .441.183c.163 0 .32-.061.442-.183l3.796-3.796a.623.623 0 0 0-.005-.878L27.166.183z" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+          <title>close</title>
+          <path
+            d="M21 4.565L19.435 3 12 10.435 4.565 3 3 4.565 10.435 12 3 19.435 4.565 21 12 13.565 19.435 21 21 19.435 13.565 12z" />
+        </symbol>
+        <symbol id="icon-navup" viewBox="0 0 50 50">
+          <title>navup</title>
+          <path
+            d="M20.259 28.211l5.07-5.03 5.075 5.034a.36.36 0 0 0 .51 0 .356.356 0 0 0 0-.506l-5.323-5.28a.404.404 0 0 0-.135-.084.364.364 0 0 0-.384.08l-5.324 5.28a.356.356 0 0 0 0 .506c.141.14.37.14.51 0z" />
+        </symbol>
+        <symbol id="icon-navdown" viewBox="0 0 50 50">
+          <title>navdown</title>
+          <path
+            d="M20.259 22.43l5.07 5.03 5.075-5.034a.36.36 0 0 1 .51 0c.14.14.14.366 0 .506l-5.323 5.28a.404.404 0 0 1-.135.084.364.364 0 0 1-.384-.081l-5.324-5.28a.356.356 0 0 1 0-.505c.141-.14.37-.14.51 0z" />
+        </symbol>
+        <symbol id="icon-grid" viewBox="0 0 24 24">
+          <title>grid</title>
+          <path
+            d="M8.982 8.982h5.988v5.988H8.982zM0 0h5.988v5.988H0zM8.982 17.965h5.988v5.988H8.982zM0 8.982h5.988v5.988H0zM0 17.965h5.988v5.988H0zM17.965 0h5.988v5.988h-5.988zM8.982 0h5.988v5.988H8.982zM17.965 8.982h5.988v5.988h-5.988zM17.965 17.965h5.988v5.988h-5.988z" />
+        </symbol>
+      </svg>
+
+      <main>
+        <div class="sections">
+          <header class="sections__header">
+            <h1 class="title logo">
+              <img src="assets/images/kayzen-logo.png" alt="Kayzen Studio">
+            </h1>
+          </header>
+          <!-- menu -->
+          <nav class="menu">
+            <ul class="menu__inner">
+              <li class="menu__item"><a class="menu__item-link" href="#">Our Story</a></li>
+              <li class="menu__item"><a class="menu__item-link" href="#">Our Mision</a></li>
+              <li class="menu__item"><a class="menu__item-link" href="#">Testimonials</a></li>
+              <li class="menu__item"><a class="menu__item-link" href="#">Contact</a></li>
+            </ul>
+            <div class="menu__toggle">
+              <span class="menu__toggle-inner menu__toggle-inner--open">
+                <svg class="icon icon--menu">
+                  <use xlink:href="#icon-menu"></use>
+                </svg>
+              </span>
+              <span class="menu__toggle-inner menu__toggle-inner--close">
+                <svg class="icon icon--close">
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </span>
+            </div>
+          </nav>
+          <!-- facts expander with toggles; content for each is in its section -->
+          <div class="facts">
+            <div class="facts__toggle available">
+              <span class="facts__toggle-inner facts__toggle-inner--more">
+                <svg class="icon icon--dot">
+                  <use xlink:href="#icon-dot"></use>
+                </svg>
+                <span class="facts__toggle-text">Read more</span>
+              </span>
+              <span class="facts__toggle-inner facts__toggle-inner--less">
+                <svg class="icon icon--cross">
+                  <use xlink:href="#icon-cross"></use>
+                </svg>
+                <span class="facts__toggle-text">Collapse</span>
+              </span>
+            </div>
+            <button class="button-contentclose">
+              <svg class="icon icon--close">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- index -->
+          <div class="sections__index">
+            <span class="sections__index-current">
+              <span class="sections__index-inner">01</span>
+            </span>
+            <span class="sections__index-total">04</span>
+          </div>
+          <!-- navigation down -->
+          <nav class="sections__nav">
+            <button class="sections__nav-item sections__nav-item--prev">
+              <svg class="icon icon--navup">
+                <use xlink:href="#icon-navup"></use>
+              </svg>
+            </button>
+            <button class="sections__nav-item sections__nav-item--next">
+              <svg class="icon icon--navdown">
+                <use xlink:href="#icon-navdown"></use>
+              </svg>
+            </button>
+          </nav>
+
+          <!-- sections -->
+          <section class="section section--current">
+            <div class="section__content">
+              <h2 class="section__title highlight-bold">Hello</h2>
+              <p class="section__description"><span class="section__description-inner"><strong>Welcome to Kayzen™</strong>, a disruptive <strong class="highlight">360º Digital Agency</strong>. We create powerful and robust web apps and brands that impact on te market and amplify the customer acquisition to companies, professionals and brands.</span></p>
+            </div>
+            <div class="section__img">
+              <div class="section__img-inner" style="background-image: url(assets/images/1.jpg)"></div>
+            </div>
+            <div class="section__more">
+              <div class="section__more-inner section__more-inner--bg1">
+                <span class="section__more-text">Want to know more?</span>
+                <a href="#" class="show-form section__more-link">
+                  <a href="#" class="show-form section__more-link">
+                  <svg class="icon icon--arrowlong">
+                    <use xlink:href="#icon-arrowlong"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="section__expander"></div>
+            <ul class="section__facts">
+
+              <li class="section__facts-item first-one">
+                <h3 class="section__facts-title">Our Services</h3>
+                <span class="section__facts-detail">At a glance</span>
+              </li>
+
+              <li class="section__facts-item"></li>
+
+              <li class="section__facts-item">
+                <h3 class="section__facts-title">Web Development</h3>
+                <span class="section__facts-detail">Get digital, get leads</span>
+              </li>
+
+              <li class="section__facts-item">
+                <h3 class="section__facts-title">Graphic Design</h3>
+                <span class="section__facts-detail">Your ideas, your rules</span>
+              </li>              
+
+              <li class="section__facts-item">
+                <h3 class="section__facts-title">Brand Creation</h3>
+                <span class="section__facts-detail">Empower your identity</span>
+              </li>
+              
+              <li class="section__facts-item">
+                <h3 class="section__facts-title">XaaS</h3>
+                <span class="section__facts-detail">Turn your ideas into real</span>
+              </li>            
+              <!-- <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery2">
+                <div class="section__facts-img">
+                  <img src="assets/images/thumb2.jpg" alt="Some image" />
+                  <svg class="icon icon--grid">
+                    <use xlink:href="#icon-grid"></use>
+                  </svg>
+                </div>
+                <h3 class="section__facts-title">More impressions</h3>
+                <span class="section__facts-detail">A collection of images</span>
+              </li> -->
+            </ul>
+            <!-- <div class="section__gallery" id="gallery1">
+              <h3 class="section__gallery-item section__gallery-item--title">More impressions</h3>
+              <a class="section__gallery-item" href="#"><img src="assets/images/thumb1.jpg" alt="Some image" /></a>
+              <a class="section__gallery-item" href="#"><img src="assets/images/thumb2.jpg" alt="Some image" /></a>
+              <a class="section__gallery-item" href="#"><img src="assets/images/thumb3.jpg" alt="Some image" /></a>
+              <a class="section__gallery-item" href="#"><img src="assets/images/thumb4.jpg" alt="Some image" /></a>
+              <a class="section__gallery-item" href="#"><img src="assets/images/thumb5.jpg" alt="Some image" /></a>
+              <a class="section__gallery-item" href="#"><img src="assets/images/thumb6.jpg" alt="Some image" /></a>
+            </div> -->
+          </section>
+
+          <!--/ section -->
+          <section class="section">
+            <div class="section__content">
+              <h2 class="section__title">Mission</h2>
+              <p class="section__description"><span class="section__description-inner"><strong class="highlight">Change people's lives</strong>, boost them and help them achieve their goals and dreams, be it through big or small actions that are meaningful to each of our team members, associates, and all the people around the world.</span></p>
+            </div>
+            <div class="section__img">
+              <div class="section__img-inner" style="background-image: url(assets/images/2.jpg)"></div>
+            </div>
+            <div class="section__more">
+              <div class="section__more-inner section__more-inner--bg2">
+                <span class="section__more-text">Want to know more?</span>
+                <a href="#" class="article-show section__more-link">
+                  <span class="section__more-linktext">Read the full article</span>
+                  <svg class="icon icon--arrowlong">
+                    <use xlink:href="#icon-arrowlong"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="section__expander"></div>
+            <ul class="section__facts">
+              <li class="section__facts-item first-one">
+                <h3 class="section__facts-title">How we do it</h3>
+                <span class="section__facts-detail">A different approach</span>
+              </li>
+              <li class="section__facts-item">
+                <h3 class="section__facts-title"></h3>
+                <span class="section__facts-detail"></span>
+              </li>
+              <li class="section__facts-item">
+                <h3 class="section__facts-title">Green Mindset</h3>
+                <span class="section__facts-detail">Earth friedly resources</span>
+              </li>   
+              <li class="section__facts-item">
+                <h3 class="section__facts-title">Against the Crysis</h3>
+                <span class="section__facts-detail">We focus our efforts on the use of technologies and methodologies that contribute to the well-being of our planet.</span>
+              </li>           
+              
+            </ul>
+          </section>
+          <!--/ section -->
+          <section class="section">
+            <div class="section__content">
+              <h2 class="section__title">About</h2>
+              <p class="section__description"><span class="section__description-inner">We are a group of <strong class="highlight">experienced professionals</strong> in different technological and marketing areas committed to the results of our work and the values of our initiative.</span></p>
+            </div>
+            <div class="section__img">
+              <div class="section__img-inner" style="background-image: url(assets/images/3.jpg)"></div>
+            </div>
+            <div class="section__more">
+              <div class="section__more-inner section__more-inner--bg3">
+                <span class="section__more-text">Want to know more?</span>
+                <a href="#" class="article-show section__more-link">
+                  <span class="section__more-linktext">Read More</span>
+                  <svg class="icon icon--arrowlong">
+                    <use xlink:href="#icon-arrowlong"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="section__expander"></div>
+            <ul class="section__facts">
+              <li class="section__facts-item first-one">
+                <h3 class="section__facts-title">Who we are</h3>
+                <span class="section__facts-detail">The Kayzen Initiative</span>
+              </li>
+              <li class="section__facts-item">
+                <h3 class="section__facts-title"></h3>
+                <span class="section__facts-detail"></span>
+              </li>
+              <li class="section__facts-item">
+                <h3 class="section__facts-title">Kayzen Culture</h3>
+                <span class="section__facts-detail">Kayzen Initiative is born out of an empowered team of professionals. We are data driven masterminds, energetic designers, developers, and tech pioneers. Every action counts.</span>
+              </li>                            
+            </ul>
+          </section>
+          <!--/ section -->
+          <section class="section">
+            <div class="section__content">
+              <h2 class="section__title">Contact</h2>
+              <p class="section__description"><span class="section__description-inner"><strong class="highlight">We love</strong> receiving and talking about the ideas of our clients and associates, would you like to discuss the best solution for your business? <strong>Don't hesitate to write us</strong>.</span></p>
+            </div>
+            <div class="section__img">
+              <div class="section__img-inner" style="background-image: url(assets/images/4.jpg)"></div>
+            </div>
+            <div class="section__more">
+              <div class="section__more-inner section__more-inner--bg4">
+                <span class="section__more-text">Need a solution?</span>
+                <a href="#" class="show-form section__more-link">
+                  <span class="section__more-linktext">Reach Us</span>
+                  <svg class="icon icon--arrowlong">
+                    <use xlink:href="#icon-arrowlong"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="section__expander"></div>
+            <ul class="section__facts">
+              <li class="section__facts-item first-one">
+                <h3 class="section__facts-title ">Contact Info</h3>
+                <span class="section__facts-detail">Talk with us</span>
+              </li>
+              <li class="section__facts-item">
+                <h3 class="section__facts-title"></h3>
+                <span class="section__facts-detail"></span>
+              </li>
+              <li class="section__facts-item">
+                <h3 class="section__facts-title talk-uruguay">Uruguay</h3>
+                <span class="section__facts-detail">Location: Montevideo</span><br class="hide-desktop">
+                <span class="section__facts-detail">Phone: (+598) 92 234 272</span>
+              </li>
+              <li class="section__facts-item">
+                <h3 class="section__facts-title talk-italy">Italy</h3>
+                <span class="section__facts-detail">Location: Roma</span><br class="hide-desktop">
+                <span class="section__facts-detail">Phone: (+39) 389 944 9615</span>
+              </li>              
+              <li class="section__facts-item">
+                <h3 class="section__facts-title talk-argentina">E-Mail</h3>
+                <span class="section__facts-detail">talk@kayzen.studio</span>
+              </li>
+
+
+            </ul>
+          </section>
+          <!--/ section -->
+        </div>
+        <!--/ sections -->
+      </main>
+      
+      <!-- !FORM Wrapper -->
+      <div id="form-wrapper" class="form-wrapper ease-transition">
+        <!-- TODO: Add X Icon to Close Overlay -->
+        <!-- <div class="close-wrapper"> 
+          <a href="#"> <span class="close-form"></span> </a>
+        </div> -->
+        <div class="form-body">
+          <div class="form-group form-header">
+            <div class="form-logo">
+              <img src="assets/images/kayzen-iso.png" alt="Kayzen Initiative" srcset="assets/images/kayzen-iso.png">
+            </div>
+            <p> Want to <strong>turn your ideas into real?</strong> Get in touch and <strong>let's talk about it.</strong></p>
+          </div>
+          <form id="contact-form" action="https://formspree.io/f/xknkyzbl" method="POST">
+            <div class="input-group">
+              <input type="text" name="_customerName" placeholder="Your Name" / required>
+            </div>
+            <div class="input-group">
+              <input type="email" name="_replyTo" placeholder="Contact Email" / required>
+            </div>
+            <div class="input-group">
+              <textarea
+                name="_messageContent"
+                placeholder="How can we help you? Type here."
+                required
+              ></textarea>
+            </div>
+            <!-- your other form fields go here -->
+            <div class="input-group">
+              <button id="contact-send-btn" type="submit" class="contact-send-btn">Send</button>
+            </div>
+            <span id="form-status"></span>
+          </form>
+        </div>
+      </div>
+      <!-- !END FORM Wrapper -->
+
+      <!-- !Article Wrapper -->
+      <div id="article-wrapper" class="article-wrapper ease-transition">
+        <div class="article-content">
+          <div class="article-header">
+            <div class="article-title">
+              <h1 class="no-margin-top">The Kayzen<span class="micro-typo">™</span>&nbsp; Initiative</h1>
+            </div>
+          </div>
+          <div class="article-body">
+            <p>By working with other companies, we realized that their <strong>environmental print was huge</strong>.</p>
+            <p>We realized that as human beings we speak about change but when it affects our comfort zone, we are not willing to give it up. More and more we were facing this reality.</p><p>This company is founded by people from different parts of the world, people that travelled and saw how global warming, wars, and internal conflicts are affecting human beings and our planet.</p>
+            <p>We have had to stare In the eyes of people that were really suffering.</p>
+            <p>We have looked it in the eyes of people exactly likes us, that their only sin was being born on the wrong side of the world, in the wrong social status, lacking opportunities and help, and for so many years we didn’t think we could do anything about it. That we could make a difference, we were hopeless employees.</p>
+            <p>Until we found each other, that is when we realized that together we could achieve something, and that we weren’t alone in this fight. There were other people questioning the system and willing to try, at least to try making a change.</p>
+            <p>We questioned ourselves, how can we bring a child to this world that is on fire? we asked ourselves how we could create a business that would bring us professional success, but while <strong>we would be actually HELPING</strong>.</p>
+            <p>People that we met all over the world help us build that faith, people that trusted us, that helped us, and that celebrate our attempt, they encourage us to keep going with our dream, our fight.</p>
+            <p>We are idealistic, we have a hard path to walk, and we are not perfect.
+              But something is sure, <strong>Kayzen was born to make this world a better place</strong>.</p> 
+
+          <p><strong>Join us</strong> in this <strong>fight to save our Mother Earth</strong>, and US ALONG THE WAY.</p>
+          </div>
+        </div>
+      </div>
+      <!-- !END Article Wrapper -->
+
+      <div class="close-overlay ease-transition hide"></div>
+
+      <script src="assets/js/jquery.min.js">             </script>
+      <script src="assets/js/imagesloaded.pkgd.min.js">  </script>
+      <script src="assets/js/charming.min.js">           </script>
+      <script src="assets/js/anime.min.js">              </script>
+      <script src="assets/js/mCustomScrollbar.js">       </script>
+      <script src="assets/js/main.js">                   </script>
+      <script src="assets/js/jquery.main.js">            </script>
+    </body>
 </html>
