@@ -725,3 +725,25 @@ button:focus {
 		padding: 0.5rem;
 	}
 }
+
+/* !Form Styles */
+
+.form-wrapper {
+	align-items: center;
+	background: white;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: -100vh;
+	width: 53vw;
+	z-index: 999999;
+	transition: all linear 600ms;
+}
+
+.form-wrapper.active {
+	top: 0;
+	opacity: 1;
+}
