@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/css/mCustomScrollbar.css">
+
     <!-- Critical JS -->
     <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars();</script>
 
@@ -234,7 +237,7 @@
             <div class="section__more">
               <div class="section__more-inner section__more-inner--bg2">
                 <span class="section__more-text">Want to know more?</span>
-                <a href="#" class="section__more-link">
+                <a href="#" class="article-show section__more-link">
                   <span class="section__more-linktext">Read the full article</span>
                   <svg class="icon icon--arrowlong">
                     <use xlink:href="#icon-arrowlong"></use>
@@ -275,7 +278,7 @@
             <div class="section__more">
               <div class="section__more-inner section__more-inner--bg3">
                 <span class="section__more-text">Want to know more?</span>
-                <a href="mailto:talk@kayzen.studio" class="section__more-link">
+                <a href="#" class="article-show section__more-link">
                   <span class="section__more-linktext">Read More</span>
                   <svg class="icon icon--arrowlong">
                     <use xlink:href="#icon-arrowlong"></use>
@@ -352,10 +355,12 @@
         <!--/ sections -->
       </main>
       
+      <!-- !FORM Wrapper -->
       <div id="form-wrapper" class="form-wrapper ease-transition">
-        <div class="close-wrapper"> 
+        <!-- TODO: Add X Icon to Close Overlay -->
+        <!-- <div class="close-wrapper"> 
           <a href="#"> <span class="close-form"></span> </a>
-        </div>
+        </div> -->
         <div class="form-body">
           <div class="form-group form-header">
             <div class="form-logo">
@@ -383,14 +388,42 @@
             </div>
             <span id="form-status"></span>
           </form>
-          </div>
+        </div>
       </div>
+      <!-- !END FORM Wrapper -->
+
+      <!-- !Article Wrapper -->
+      <div id="article-wrapper" class="article-wrapper ease-transition">
+        <div class="article-content">
+          <div class="article-header">
+            <div class="article-title">
+              <h1 class="no-margin-top">The Kayzen<span class="micro-typo">™</span>&nbsp; Initiative</h1>
+            </div>
+          </div>
+          <div class="article-body">
+            <p>By working with other companies, we realized that their <strong>environmental print was huge</strong>.</p>
+            <p>We realized that as human beings we speak about change but when it affects our comfort zone, we are not willing to give it up. More and more we were facing this reality.</p><p>This company is founded by people from different parts of the world, people that travelled and saw how global warming, wars, and internal conflicts are affecting human beings and our planet.</p>
+            <p>We have had to stare In the eyes of people that were really suffering.</p>
+            <p>We have looked it in the eyes of people exactly likes us, that their only sin was being born on the wrong side of the world, in the wrong social status, lacking opportunities and help, and for so many years we didn’t think we could do anything about it. That we could make a difference, we were hopeless employees.</p>
+            <p>Until we found each other, that is when we realized that together we could achieve something, and that we weren’t alone in this fight. There were other people questioning the system and willing to try, at least to try making a change.</p>
+            <p>We questioned ourselves, how can we bring a child to this world that is on fire? we asked ourselves how we could create a business that would bring us professional success, but while <strong>we would be actually HELPING</strong>.</p>
+            <p>People that we met all over the world help us build that faith, people that trusted us, that helped us, and that celebrate our attempt, they encourage us to keep going with our dream, our fight.</p>
+            <p>We are idealistic, we have a hard path to walk, and we are not perfect.
+              But something is sure, <strong>Kayzen was born to make this world a better place</strong>.</p> 
+
+          <p><strong>Join us</strong> in this <strong>fight to save our Mother Earth</strong>, and US ALONG THE WAY.</p>
+          </div>
+        </div>
+      </div>
+      <!-- !END Article Wrapper -->
+
       <div class="close-overlay ease-transition hide"></div>
 
       <script src="assets/js/jquery.min.js">             </script>
       <script src="assets/js/imagesloaded.pkgd.min.js">  </script>
       <script src="assets/js/charming.min.js">           </script>
       <script src="assets/js/anime.min.js">              </script>
+      <script src="assets/js/mCustomScrollbar.js">       </script>
       <script src="assets/js/main.js">                   </script>
       <script src="assets/js/jquery.main.js">            </script>
     </body>
